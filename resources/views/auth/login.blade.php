@@ -13,7 +13,7 @@
                         <div class="col-lg-6">
                             <div class="p-5">
                                 <div class="text-center">
-                                    <img src="{{asset('image/LOGO KEBANGSAAN.png')}}" alt="" width="100" height="100">
+                                    <img src="{{asset('image/LogoNuha.png')}}" alt="" width="100" height="100">
                                     <strong class="h4 text-gray-900 mb-4 mt-2 ">
                                             <h1>
                                                 Welcome !

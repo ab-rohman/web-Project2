@@ -22,7 +22,7 @@
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                     <tr class="text-center">
-                                        <th>NISN</th>
+                                        <th>NIK</th>
                                         <th>KARTU KELUARGA</th>
                                         <th>AKTE</th>
                                         <th>SKHUN</th>

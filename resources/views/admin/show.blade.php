@@ -46,7 +46,7 @@
                                 <thead>
                                     <tr class="text-center">
                                         <th>NAMA LENGKAP</th>
-                                        <th>NISN</th>
+                                        <th>NIK</th>
                                         <th>EMAIL</th>
                                         <th>JENIS KELAMIN</th>
                                         <th>TEMPAT LAHIR</th>
@@ -56,7 +56,7 @@
                                         <th>ASAL SEKOLAH</th>
                                         <th>TAHUN LULUS</th>
                                         <th>AGAMA</th>
-                                        <th>JURUSAN</th>
+                                        <th>DINIYAH</th>
                                         <th>KARTU KELUARGA</th>
                                         <th>AKTA</th>
                                         <th>SKHUN</th>

@@ -16,7 +16,7 @@
                             </div>
                             <div class="form-group col-md-9 mt-5">
                                 <strong>
-                                    <h1 class="font">SESI WAWANCARA PESERTA DIDIK
+                                    <h1 class="font">SESI VALIDASI DOKUMEN SANTRI
                                         <br>
                                         Pondok Pesantren Nurul Huda
                                     </h1>
@@ -36,7 +36,7 @@
                             <form action="{{route('admin.wawancara.store')}}" method="post" id="input">
                                 @csrf
                                 <div class="text-center font">
-                                    <h4> Form Wawancara Anak</h4>
+                                    <h4> Form Tes Santri</h4>
                                 </div>
                                 <br>
                                 {{-- card wawancara anak --}}
@@ -155,13 +155,11 @@
                                                     </div>
                                                 </div>
                                                 <div class="col">
-                                                    <label for="pertanyaan8" class="font">9. Jurusan yang diminati </label>
+                                                    <label for="pertanyaan8" class="font">9. Apakah sudah pernah diniyah </label>
                                                     <select id="pertanyaan8" type="text" class="form-control @error('pertanyaan8') is-invalid @enderror" name="pertanyaan8" value="{{ old('pertanyaan8') }}" required autocomplete="pertanyaan1" autofocus>
                                                         <option>Pilih</option>
-                                                        <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
-                                                        <option value="Teknik Komputer Jaringan">Teknik Komputer Jaringan</option>
-                                                        <option value="Perhotelan">Perhotelan</option>
-                                                        <option value="Bisnis Daring Dan Pemasaran">Bisnis Daring Dan Pemasaran</option>
+                                                        <option value="pernah">Pernah</option>
+                                                        <option value="belum pernah">Belum Pernah</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -200,7 +198,7 @@
                                 {{-- akhir card wawancara anak --}}
                                 <br>
                                 <div class="font text-center">
-                                    <h4> Form Wawancara Orang Tua</h4>
+                                    <h4> Form Tes Orang Tua</h4>
                                 </div>
                                 <br>
                                 {{-- card wawancara orang tua --}}
@@ -318,13 +316,11 @@
                                                             </div>
                                                         </div>
                                                         <div class="col">
-                                                            <label for="pertanyaan18" class="font">9. Jurusan yang diminati </label>
+                                                            <label for="pertanyaan18" class="font">9. Apakah pernah diniyah? </label>
                                                             <select id="pertanyaan18" type="text" class="form-control @error('pertanyaan18') is-invalid @enderror" name="pertanyaan18" value="{{ old('pertanyaan8') }}" required autocomplete="pertanyaan1" autofocus>
                                                                 <option>Pilih</option>
-                                                                <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
-                                                                <option value="Teknik Komputer Jaringan">Teknik Komputer Jaringan</option>
-                                                                <option value="Perhotelan">Perhotelan</option>
-                                                                <option value="Bisnis Daring Dan Pemasaran">Bisnis Daring Dan Pemasaran</option>
+                                                                <option value="pernah">Sudah Pernah</option>
+                                                                <option value="belum pernah">Belum Pernah</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -352,7 +348,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="col">
-                                                            <label for="pertanyaan20" class="font">10. Alasan Mengambil Jurusan Tersebut </label>
+                                                            <label for="pertanyaan20" class="font">10. Alasan Mengikuti Diniyah Tersebut </label>
                                                             <div class="form-group">
                                                                 <input type="text" class="form-control" id="pertanyaan20" name="pertanyaan20" placeholder="Jawaban...">
                                                             </div>

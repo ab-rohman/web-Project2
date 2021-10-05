@@ -76,16 +76,12 @@
 
                         <div class="form-row">
                             <div class="form-group col-md-8">
-                                <label for="inputCity">Agama</label>
+                                <label for="inputCity">status</label>
                                 <select id="agama" type="text" class="form-control @error('agama') is-invalid @enderror" name="agama" value="{{ old('agama') }}" required autocomplete="agama" autofocus>
                                     <option>Pilih</option>
-                                    <option value="Islam">Islam</option>
-                                    <option value="Kristen">Kristen</option>
-                                    <option value="Protestan">Protestan</option>
-                                    <option value="Katholik">Katholik</option>
-                                    <option value="Hindu">Hindu</option>
-                                    <option value="Budha">Budha</option>
-                                    <option value="Konghucu">Konghucu</option>
+                                    <option value="Mahasiswa">Mahasiswa</option>
+                                    <option value="Sekolah">Sekolah</option>
+                                    <option value="tidak kuliah">Sedang tidak kuliah</option>
                                     </select>
                                     @error('agama')
                                         <span class="invalid-feedback" role="alert">
@@ -94,7 +90,7 @@
                                     @enderror
                             </div>
                             <div class="form-group col-md-4">
-                                <label for="inputZip">NISN</label>
+                                <label for="inputZip">NIK</label>
                                 <input id="nisn" type="number" class="form-control @error('nisn') is-invalid @enderror" name="nisn" value="{{ old('nisn') }}" required autocomplete="nisn" autofocus>
 
                                 @error('nisn')
@@ -165,13 +161,11 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="inputAddress">Jurusan</label>
+                            <label for="inputAddress">diniyah</label>
                             <select id="jurusan" type="text" class="form-control @error('jurusan') is-invalid @enderror" name="jurusan" value="{{ old('jurusan') }}" required autocomplete="jurusan" autofocus>
                                 <option>Pilih</option>
-                                <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
-                                <option value="Teknik Komputer Jaringan">Teknik Komputer Jaringan</option>
-                                <option value="Perhotelan">Perhotelan</option>
-                                <option value="Bisnis Daring Dan Pemasaran">Bisnis Daring Dan Pemasaran</option>
+                                <option value="pernah">pernah diniyah</option>
+                                <option value="belum pernah">belum pernah</option>
                                 </select>
                                 @error('jurusan')
                                     <span class="invalid-feedback" role="alert">

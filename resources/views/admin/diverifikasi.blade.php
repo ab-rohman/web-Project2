@@ -36,9 +36,9 @@
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                     <tr class="text-center">
-                                        <th>NISN</th>
+                                        <th>NIK</th>
                                         <th>NAMA</th>
-                                        <th>WAWANCARA</th>
+                                        <th>STATUS</th>
                                         <th>DOCUMENT</th>
                                         <th>TANGGAL</th>
                                         <th>AKSI</th>
@@ -52,11 +52,11 @@
                                             <td>
                                                 @if ($usr->wawancara)
                                                     <div class="text-success">
-                                                        Sudah Melakukan Wawancara
+                                                        Data Sudah Tervalidasi
                                                     </div>
                                                 @else
                                                     <div class="text-danger">
-                                                        Belum Melakukan Wawancara
+                                                        Data Belum Tervalidasi
                                                     </div>
                                                 @endif
                                             </td>

@@ -36,10 +36,10 @@
                                 <thead>
                                     <tr class="text-center">
                                         <th>NO</th>
-                                        <th>NISN</th>
+                                        <th>NIK</th>
                                         <th>NAMA</th>
                                         <th>STATUS</th>
-                                        <th>WAWANCARA</th>
+                                        <th>DOKUMEN</th>
                                         <th>AKSI</th>
                                     </tr>
                                 </thead>
@@ -69,11 +69,11 @@
                                             <td>
                                                 @if ($usr->wawancara)
                                                     <div class="text-success">
-                                                        Sudah Melakukan Wawancara
+                                                        Sudah Melengkapi Dokumen
                                                     </div>
                                                 @else
                                                 <div class="text-danger">
-                                                    Belum Melakukan Wawancara
+                                                    Belum Melengkapi Dokumen
                                                 </div>
                                                 @endif
                                             </td>
@@ -137,7 +137,7 @@
                                                                             </div>
                                                                             <hr>
                                                                             <div class="form-row">
-                                                                                <label for="formGroupExampleInput" >Tanggal Wawancara</label>
+                                                                                <label for="formGroupExampleInput" >Tanggal Dokumen sudah Valid</label>
                                                                                 <div class="form-group col-md-12">
                                                                                     <input type="date" class="form-control" min="{{date('Y-m-d')}}" id="tanggal_wawancara" name="tanggal_wawancara" placeholder="Example input">
                                                                                 </div>

@@ -36,9 +36,9 @@
                                 <thead>
                                     <tr class="text-center">
                                         <th>NO</th>
-                                        <th>NISN</th>
+                                        <th>NIK</th>
                                         <th>NAMA</th>
-                                        <th>WAWANCARA</th>
+                                        <th>STATUS</th>
                                         <th>CATATAN</th>
                                         <th>AKSI</th>
                                     </tr>
@@ -52,11 +52,11 @@
                                             <td>
                                                 @if ($usr->wawancara)
                                                     <div class="text-success">
-                                                        Sudah Melakukan Wawancara
+                                                        Sudah Melengkapi Berkas
                                                     </div>
                                                 @else
                                                     <div class="text-danger">
-                                                        Belum Melakukan Wawancara
+                                                        Belum Melengkapi Berkas
                                                     </div>
                                                 @endif
                                             </td>
