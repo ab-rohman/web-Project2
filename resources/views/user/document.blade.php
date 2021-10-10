@@ -25,7 +25,7 @@
                                         <th>NIK</th>
                                         <th>KARTU KELUARGA</th>
                                         <th>AKTE</th>
-                                        <th>SKHUN</th>
+                                        <th>KTP</th>
                                         <th>IJAZAH</th>
                                         <th>STATUS</th>
                                         <th>CATATAN</th>

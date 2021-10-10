@@ -67,7 +67,7 @@
                                                     @endif
                                             </td>
                                             <td>
-                                                @if ($usr->wawancara)
+                                                @if ($usr->document)
                                                     <div class="text-success">
                                                         Sudah Melengkapi Dokumen
                                                     </div>

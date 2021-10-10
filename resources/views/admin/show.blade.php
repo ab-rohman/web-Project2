@@ -59,7 +59,7 @@
                                         <th>DINIYAH</th>
                                         <th>KARTU KELUARGA</th>
                                         <th>AKTA</th>
-                                        <th>SKHUN</th>
+                                        <th>KTP</th>
                                         <th>IJAZAH</th>
 
                                     </tr>

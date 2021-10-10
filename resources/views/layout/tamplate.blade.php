@@ -42,7 +42,7 @@
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient sidebar sidebar-dark accordion" id="accordionSidebar">
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="https://ppssnh.malang.pesantren.web.id/">
 
                 <img src="http://localhost:8000/image/LogoNuha.png" width="60" height="60">
             </a>

@@ -208,7 +208,7 @@
                                                 <div class="card-body">
                                                     <div class="row">
                                                         <div class="col">
-                                                            <label for="pertanyaan11" class="font">1. Tau sekolah SMK WIKRAMA dari mana ?</label>
+                                                            <label for="pertanyaan11" class="font">1. Tau Pondok Nurl Huda dari mana ?</label>
                                                             <select id="pertanyaan11" type="text" class="form-control @error('pertanyaan11') is-invalid @enderror" name="pertanyaan11" value="{{ old('pertanyaan1') }}" required autocomplete="pertanyaan1" autofocus>
                                                                 <option>Pilih</option>
                                                                 <option value="Guru/Staf/Laboran/Pegawai Wikrama">Guru/Staf/Laboran/Pegawai Wikrama</option>

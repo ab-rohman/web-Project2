@@ -50,7 +50,7 @@
                                             <td>{{$usr->nisn}}</td>
                                             <td>{{$usr->name}}</td>
                                             <td>
-                                                @if ($usr->wawancara)
+                                                @if ($usr->document)
                                                     <div class="text-success">
                                                         Data Sudah Tervalidasi
                                                     </div>
@@ -75,7 +75,7 @@
                                                 {{Date('d, D M Y', strtotime($usr->tanggal_wawancara)) }}
                                             </td>
                                             <td>
-                                                @if ($usr->wawancara)
+                                                @if ($usr->document)
                                                     <a href="/admin/show/{{$usr->id}}" class="btn btn-warning">Detail</a>
                                                     {{-- <a href="/admin/terima/{{$usr->id}}" class="btn btn-success">Terima</a> --}}
                                                     <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalterima{{$loop->index}}">

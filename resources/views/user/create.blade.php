@@ -55,7 +55,7 @@
                                 <div class="card mt-2">
                                     <div class="card-body">
                                         <div class="form-group">
-                                            <label for="exampleFormControlFile1">SKHUN</label>
+                                            <label for="exampleFormControlFile1">KTP</label>
                                             <input type="file" class="form-control-file @error('skhun') is-invalid @enderror" id="skhun" name="skhun" value="{{old('skhun')}}">
                                             @error('skhun')
                                                 <div id="validationCustom03" class="invalid-feedback">

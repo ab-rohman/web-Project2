@@ -52,11 +52,11 @@
                                             <td>
                                                 @if ($usr->wawancara)
                                                     <div class="text-success">
-                                                        Sudah Melengkapi Berkas
+                                                        Sudah Tervalidasi
                                                     </div>
                                                 @else
                                                     <div class="text-danger">
-                                                        Belum Melengkapi Berkas
+                                                        Belum Tervalidasi
                                                     </div>
                                                 @endif
                                             </td>

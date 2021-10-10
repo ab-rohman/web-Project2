@@ -49,13 +49,13 @@
                                             <td>{{$usr->nisn}}</td>
                                             <td>{{$usr->name}}</td>
                                             <td>
-                                                @if ($usr->wawancara)
+                                                @if ($usr->document)
                                                     <div class="text-success">
-                                                        Sudah Melengkapi Data
+                                                        Sudah Tervalidasi
                                                     </div>
                                                 @else
                                                     <div class="text-danger">
-                                                        Belum Melengkapi Data
+                                                        Belum Tervalidasi
                                                     </div>
                                                 @endif
                                             </td>
