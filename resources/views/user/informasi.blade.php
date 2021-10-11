@@ -15,7 +15,7 @@
                                         <h1 class="font text-center">
                                             SELAMAT ANDA LOLOS TAHAP AWAL
                                             <br>
-                                            BERIKUT JADWAL VALIDASI DOKUMEN {{ date('d, D M Y', strtotime($informasi->tanggal_wawancara)) }}
+                                            BERIKUT JADWAL VALIDASI DOKUMEN {{ date('d, D M Y', strtotime($informasi->tanggal_validasi)) }}
                                         </h1>
                                     </strong>
                                 @elseif ($informasi->status == 'ditolak')

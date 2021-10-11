@@ -139,7 +139,7 @@
                                                                             <div class="form-row">
                                                                                 <label for="formGroupExampleInput" >Tanggal Dokumen sudah Valid</label>
                                                                                 <div class="form-group col-md-12">
-                                                                                    <input type="date" class="form-control" min="{{date('Y-m-d')}}" id="tanggal_wawancara" name="tanggal_wawancara" placeholder="Example input">
+                                                                                    <input type="date" class="form-control" min="{{date('Y-m-d')}}" id="tanggal_validasi" name="tanggal_validasi" placeholder="Example input">
                                                                                 </div>
                                                                             </div>
                                                                         </div>

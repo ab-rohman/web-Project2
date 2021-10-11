@@ -123,11 +123,11 @@ class AdminController extends Controller
     public function verifikasi(Request $request, $id)
     {
         $request->validate([
-            'tanggal_wawancara' => 'after_or_equal:tomorrow'
+            'tanggal_validasi' => 'after_or_equal:tomorrow'
         ]);
 
-        $tanggal_wawancara = User::where('id', $id)->update([
-            'tanggal_wawancara' => $request->tanggal_wawancara
+        $tanggal_validasi = User::where('id', $id)->update([
+            'tanggal_validasi' => $request->tanggal_validasi
         ]);
 
         $data = User::where('id', $id)->first();

@@ -72,7 +72,7 @@
                                                 @endif
                                             </td>
                                             <td>
-                                                {{Date('d, D M Y', strtotime($usr->tanggal_wawancara)) }}
+                                                {{Date('d, D M Y', strtotime($usr->tanggal_validasi)) }}
                                             </td>
                                             <td>
                                                 @if ($usr->document)
@@ -142,7 +142,7 @@
                                                         </div>
                                                     </div>
                                                 {{-- akhir modal terima --}}
-                                                @elseif (date('Y-m-d') == $usr->tanggal_wawancara)
+                                                @elseif (date('Y-m-d') == $usr->tanggal_validasi)
                                                     <a href="/admin/wawancara/{{$usr->id}}" class="btn btn-primary">Wawancara</a>
                                                     <a href="/admin/show/{{$usr->id}}" class="btn btn-warning ">Detail</a>
                                                     @else

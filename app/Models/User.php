@@ -31,7 +31,7 @@ class User extends Authenticatable
         'agama',
         'diniyah',
         'catatan',
-        'tanggal_wawancara',
+        'tanggal_validasi',
         'password',
         'is_admin',
     ];
@@ -66,6 +66,6 @@ class User extends Authenticatable
     }
 
     public function FormatTanggal(){
-        return Carbon::parse($this->attributes['tanggal_wawancara'])->translatedFormat('I, D F Y');
+        return Carbon::parse($this->attributes['tanggal_validasi'])->translatedFormat('I, D F Y');
     }
 }
