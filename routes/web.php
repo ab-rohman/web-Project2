@@ -30,11 +30,11 @@ Route::group(['middleware' => 'is_admin'], function(){
     Route::get('/admin/show/{id}', [AC::class, 'show'])->name('admin.show');
     Route::get('/admin/wawancara/{id}', [AC::class, 'wawancara'])->name('admin.wawancara');
     Route::post('/admin/wawancara/store', [AC::class, 'store'])->name('admin.wawancara.store');
-
+    
+    Route::get('/admin/generate-pdf', [PC::class, 'generatePDF'])->name('admin.genpdf');
     Route::get('/admin/peserta/diterima', [PC::class, 'diterima'])->name('peserta.diterima');
     Route::get('/admin/peserta/ditolak', [PC::class, 'ditolak'])->name('peserta.ditolak');
     Route::get('/admin/peserta/diverifikasi', [PC::class, 'diverifikasi'])->name('peserta.diverifikasi');
-
 });
 
 Route::group(['middleware' => 'auth'], function(){

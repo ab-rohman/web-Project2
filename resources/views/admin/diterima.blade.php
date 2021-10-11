@@ -95,6 +95,7 @@
                                     @endforeach
                                 </tbody>
                             </table>
+                            <a href="{{ route('admin.genpdf') }}" class="btn btn-warning">Export PDF</a>
                         </div>
                     </div>
                 </div>
