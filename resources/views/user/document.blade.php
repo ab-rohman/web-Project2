@@ -35,7 +35,7 @@
                                 <tbody>
                                     <tr class="text-center">
                                         @if ($document != null)
-                                            <td>{{$document->nisn}}</td>
+                                            <td>{{$document->nik}}</td>
                                             <td><img src="{{asset('image/'. $document->kk)}}"width="80" height="80"></td>
                                             <td><img src="http://localhost:8000/image/{{$document->akte}}" width="80" height="80"></td>
                                             <td><img src="http://localhost:8000/image/{{$document->skhun}}" width="80" height="80"></td>

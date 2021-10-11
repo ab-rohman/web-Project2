@@ -16,8 +16,8 @@
                             <form method="post" action="{{route('user.store')}}" enctype = "multipart/form-data">
                                 @csrf
                                 <div class="form-group">
-                                    <input type="text" class="form-control invisible @error('nisn') is-invalid @enderror " name="nisn" id="nisn" value="{{ Auth::user()->nisn }}" placeholder="Masukan Nis">
-                                    @error('nisn')
+                                    <input type="text" class="form-control invisible @error('nik') is-invalid @enderror " name="nik" id="nik" value="{{ Auth::user()->nik }}" placeholder="Masukan Nis">
+                                    @error('nik')
                                         <div id="validationCustom03" class="invalid-feedback">
                                             {{ $message }}
                                         </div>

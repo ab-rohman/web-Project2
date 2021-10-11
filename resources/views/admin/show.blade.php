@@ -67,7 +67,7 @@
                                 <tbody>
                                     <tr class="text-center">
                                         <td>{{$admin->name}}</td>
-                                        <td>{{$admin->nisn}}</td>
+                                        <td>{{$admin->nik}}</td>
                                         <td>{{$admin->email}}</td>
                                         <td>{{$admin->jk}}</td>
                                         <td>{{$admin->tempat_lahir}}</td>
@@ -77,7 +77,7 @@
                                         <td>{{$admin->asal_sekolah}}</td>
                                         <td>{{$admin->tahun_lulus}}</td>
                                         <td>{{$admin->agama}}</td>
-                                        <td>{{$admin->jurusan}}</td>
+                                        <td>{{$admin->diniyah}}</td>
                                         @if ($document!='')
                                             <td><img src="{{asset('image/'. $document->kk)}}" width="80" height="80"></td>
                                             <td><img src="{{asset('image/'. $document->akte)}}" width="80" height="80"></td>

@@ -23,7 +23,7 @@ class DocumentController extends Controller
     public function index()
     {
 
-        $data = Document::where('nisn', Auth::user()->nisn);
+        $data = Document::where('nik', Auth::user()->nik);
         return view('user.document', compact('data'));
     }
 
@@ -51,7 +51,7 @@ class DocumentController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nisn' => 'required',
+            'nik' => 'required',
             'kk' => 'required|mimes:jpeg,png,jpg,gif,svg',
             'akte' => 'required|mimes:jpeg,png,jpg,gif,svg',
             'skhun' => 'required|mimes:jpeg,png,jpg,gif,svg',
@@ -71,7 +71,7 @@ class DocumentController extends Controller
         $request->ijazah->move(public_path('image'), $imgname3);
 
         $document = new Document();
-        $document->nisn = $request->nisn;
+        $document->nik = $request->nik;
         $document->kk = $imgname;
         $document->akte = $imgname1;
         $document->skhun = $imgname2;
@@ -90,8 +90,8 @@ class DocumentController extends Controller
      */
     public function show()
     {
-        $user = User::where('nisn', Auth::user()->nisn )->first();
-        $document = Document::where('nisn', Auth::user()->nisn)->first();
+        $user = User::where('nik', Auth::user()->nik )->first();
+        $document = Document::where('nik', Auth::user()->nik)->first();
 
         return view('user.document', compact('document', 'user'));
     }
@@ -119,7 +119,7 @@ class DocumentController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $data = Document::where('nisn', Auth::user()->nisn)->first();
+        $data = Document::where('nik', Auth::user()->nik)->first();
         if ($request->kk != NULL) {
             $imgname = $request->kk->getClientOriginalName();
             $request->kk->move(public_path('image'), $imgname);
@@ -149,7 +149,7 @@ class DocumentController extends Controller
         }
 
         $document = Document::find($id)->update([
-            'nisn' => $data->nisn,
+            'nik' => $data->nik,
             'kk' => $imgname,
             'akte' => $imgname1,
             'skhun' => $imgname2,
@@ -176,7 +176,7 @@ class DocumentController extends Controller
 
     public function informasi()
     {
-        $informasi =  User::where('nisn', Auth::user()->nisn )->first();
+        $informasi =  User::where('nik', Auth::user()->nik )->first();
         return view('user.informasi', compact('informasi'));
     }
 }

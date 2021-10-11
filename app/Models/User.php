@@ -20,7 +20,7 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
-        'nisn',
+        'nik',
         'jk',
         'tempat_lahir',
         'tanggal_lahir',
@@ -29,7 +29,7 @@ class User extends Authenticatable
         'asal_sekolah',
         'tahun_lulus',
         'agama',
-        'jurusan',
+        'diniyah',
         'catatan',
         'tanggal_wawancara',
         'password',

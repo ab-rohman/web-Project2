@@ -187,7 +187,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col">
-                                                    <label for="pertanyaan10" class="font">10. Alasan Mengambil Jurusan Tersebut </label>
+                                                    <label for="pertanyaan10" class="font">10. Alasan Mengambil diniyah Tersebut </label>
                                                     <div class="form-group">
                                                         <input type="text" class="form-control" id="pertanyaan10" name="pertanyaan10" placeholder="Jawaban...">
                                                     </div>

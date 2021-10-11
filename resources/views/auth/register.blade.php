@@ -91,9 +91,9 @@
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="inputZip">NIK</label>
-                                <input id="nisn" type="number" class="form-control @error('nisn') is-invalid @enderror" name="nisn" value="{{ old('nisn') }}" required autocomplete="nisn" autofocus>
+                                <input id="nik" type="number" class="form-control @error('nik') is-invalid @enderror" name="nik" value="{{ old('nik') }}" required autocomplete="nik" autofocus>
 
-                                @error('nisn')
+                                @error('nik')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -162,12 +162,12 @@
 
                         <div class="form-group">
                             <label for="inputAddress">diniyah</label>
-                            <select id="jurusan" type="text" class="form-control @error('jurusan') is-invalid @enderror" name="jurusan" value="{{ old('jurusan') }}" required autocomplete="jurusan" autofocus>
+                            <select id="diniyah" type="text" class="form-control @error('diniyah') is-invalid @enderror" name="diniyah" value="{{ old('diniyah') }}" required autocomplete="diniyah" autofocus>
                                 <option>Pilih</option>
                                 <option value="pernah">pernah diniyah</option>
                                 <option value="belum pernah">belum pernah</option>
                                 </select>
-                                @error('jurusan')
+                                @error('diniyah')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

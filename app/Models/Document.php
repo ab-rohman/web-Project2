@@ -11,5 +11,5 @@ class Document extends Model
     use HasFactory;
     // use SoftDeletes;
     protected $table = 'documents';
-    protected $fillable = ['nisn', 'kk', 'akte', 'skhun', 'ijazah'];
+    protected $fillable = ['nik', 'kk', 'akte', 'skhun', 'ijazah'];
 }

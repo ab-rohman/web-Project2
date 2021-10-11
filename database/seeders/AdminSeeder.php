@@ -18,7 +18,7 @@ class AdminSeeder extends Seeder
         User::create([
             'name' => 'admin',
             'email' => 'admin@admin.com',
-            'nisn' => '999',
+            'nik' => '999',
             'jk' => 'laki',
             'tempat_lahir' => 'bogor',
             'tanggal_lahir' => '2003-09-10',
@@ -27,7 +27,7 @@ class AdminSeeder extends Seeder
             'asal_sekolah' => 'smp 1 pwk',
             'tahun_lulus' => '2016',
             'agama' => 'islam',
-            'jurusan' => 'rpl',
+            'diniyah' => 'rpl',
             'is_admin' => '1',
             'password' => Hash::make('password'),
         ]);

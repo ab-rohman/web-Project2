@@ -18,7 +18,7 @@ class CreateUsersSeeder extends Seeder
             [
                 'name'=>'Admin',
                 'email'=>'admin@gmail.com',
-                'nisn'=>'1',
+                'nik'=>'1',
                 'jk'=>'laki',
                 'tempat_lahir'=>'bogor',
                 'tanggal_lahir'=>'2003-09-10',
@@ -27,7 +27,7 @@ class CreateUsersSeeder extends Seeder
                 'asal_sekolah'=>'smp 1 purwakarta',
                 'tahun_lulus'=>'2015',
                 'agama'=>'islam',
-                'jurusan'=>'rpl',
+                'diniyah'=>'rpl',
                 'is_admin'=>'1',
                 'password'=> bcrypt('00000000'),
 

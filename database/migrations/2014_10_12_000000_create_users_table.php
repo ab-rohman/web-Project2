@@ -18,7 +18,7 @@ class CreateUsersTable extends Migration
             $table->boolean('is_admin')->nullable();
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('nisn')->unique();
+            $table->string('nik')->unique();
             $table->string('jk');
             $table->string('tempat_lahir');
             $table->date('tanggal_lahir');
@@ -27,7 +27,7 @@ class CreateUsersTable extends Migration
             $table->string('asal_sekolah');
             $table->string('tahun_lulus');
             $table->string('agama');
-            $table->string('jurusan');
+            $table->string('diniyah');
             $table->enum('status',['diverifikasi','diterima' , 'ditolak' , 'belum'])->default('belum');
             $table->string('catatan')->nullable();
             $table->date('tanggal_wawancara')->Date('d-f-y')->nullable();

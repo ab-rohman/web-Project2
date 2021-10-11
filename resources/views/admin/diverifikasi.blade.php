@@ -47,7 +47,7 @@
                                 <tbody>
                                     @foreach ($verifikasi as $usr)
                                         <tr class="text-center">
-                                            <td>{{$usr->nisn}}</td>
+                                            <td>{{$usr->nik}}</td>
                                             <td>{{$usr->name}}</td>
                                             <td>
                                                 @if ($usr->document)
