@@ -32,6 +32,9 @@ Route::group(['middleware' => 'is_admin'], function(){
     Route::post('/admin/wawancara/store', [AC::class, 'store'])->name('admin.wawancara.store');
     
     Route::get('/admin/generate-pdf', [PC::class, 'generatePDF'])->name('admin.genpdf');
+    Route::get('importExportView', [PC::class, 'importExportView']);
+    Route::get('export', [PC::class, 'export'])->name('export');
+    Route::post('import', [PC::class, 'import'])->name('import');
     Route::get('/admin/peserta/diterima', [PC::class, 'diterima'])->name('peserta.diterima');
     Route::get('/admin/peserta/ditolak', [PC::class, 'ditolak'])->name('peserta.ditolak');
     Route::get('/admin/peserta/diverifikasi', [PC::class, 'diverifikasi'])->name('peserta.diverifikasi');

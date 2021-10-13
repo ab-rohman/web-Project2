@@ -96,6 +96,7 @@
                                 </tbody>
                             </table>
                             <a href="{{ route('admin.genpdf') }}" class="btn btn-warning">Export PDF</a>
+                            <a class="btn btn-warning" href="{{ route('export') }}">Export Excel</a>
                         </div>
                     </div>
                 </div>

@@ -50,7 +50,7 @@
                                             <td>{{$usr->nik}}</td>
                                             <td>{{$usr->name}}</td>
                                             <td>
-                                                @if ($usr->wawancara)
+                                                @if ($usr->document)
                                                     <div class="text-success">
                                                         Sudah Tervalidasi
                                                     </div>

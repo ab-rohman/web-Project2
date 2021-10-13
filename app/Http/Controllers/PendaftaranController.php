@@ -6,7 +6,10 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Document;
 use Auth;
-Use PDF;
+use PDF;
+use App\Exports\UsersExport;
+use App\Imports\UsersImport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class PendaftaranController extends Controller
 {
@@ -39,5 +42,28 @@ class PendaftaranController extends Controller
         $pdf = PDF::loadView('admin.listPDF', $data);
     
         return $pdf->download('Daftarpeserta.pdf');
+    }
+
+    public function importExportView()
+    {
+       return view('import');
+    }
+     
+    /**
+    * @return \Illuminate\Support\Collection
+    */
+    public function export() 
+    {
+        return Excel::download(new UsersExport, 'users.xlsx');
+    }
+     
+    /**
+    * @return \Illuminate\Support\Collection
+    */
+    public function import() 
+    {
+        Excel::import(new UsersImport,request()->file('file'));
+             
+        return back();
     }
 }
