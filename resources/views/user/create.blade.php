@@ -5,6 +5,10 @@
 <div class="container-fluid mt-3">
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
+        <div class="">
+            <center><h2>PENGUMUMAN</h2></center>
+            <center><b><h4 class="text-primary text-uppercase">{{ Auth::user()->status }}</h4></b></center>
+        </div>
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-primary">SILAHKAN ISI DOCUMENT DIBAWAH INI !</h6>
         </div>
