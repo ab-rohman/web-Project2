@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DocumentController as DC;
 use App\Http\Controllers\AdminController as AC;
 use App\Http\Controllers\PendaftaranController as PC;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------

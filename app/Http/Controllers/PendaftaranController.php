@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Document;
 use Auth;
-use PDF;
+use Barryvdh\DomPDF\PDF;
 use App\Exports\UsersExport;
 use App\Imports\UsersImport;
 use Maatwebsite\Excel\Facades\Excel;
@@ -54,7 +54,7 @@ class PendaftaranController extends Controller
     */
     public function export() 
     {
-        return Excel::download(new UsersExport, 'users.xlsx');
+        return Excel::download(new UsersExport, 'santri.xlsx');
     }
      
     /**

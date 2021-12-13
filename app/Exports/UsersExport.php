@@ -12,6 +12,10 @@ class UsersExport implements FromCollection
     */
     public function collection()
     {
-        return User::where('status', 'diterima')->where('id', '!=', '1')->get();
+        $user = User::select('name', 'nik','jk','tempat_lahir')->where('id', '!=', '1')->get();
+        // if($user[8] != 'KELAS1'){
+        //     $user[8] = 'KELAS1';
+        // }
+        return $user;
     }
 }
